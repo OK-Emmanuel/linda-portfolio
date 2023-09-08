@@ -28,7 +28,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
-  font-family: sans-serif;
+  font-family: 'Montserrat', 'sans-serif;
   overflow-x: hidden;
   transition: 0.3s all;
 }
@@ -111,9 +111,9 @@ nav a:hover:not(.sign-up-btn) {
 .nav2 {
   display: none;
   flex-direction: column;
-  gap: 40px;
+  row-gap: 40px;
   position: absolute;
-  top: 75px;
+  top: 0px;
   left: 0px;
   background-color: ghostwhite;
   width: 100%;
@@ -127,6 +127,7 @@ nav a:hover:not(.sign-up-btn) {
 .nav2 .sign-up-btn {
   width: 100%;
   text-align: center;
+  border-radius: 10px;
 }
 
 
@@ -151,7 +152,7 @@ nav a:hover:not(.sign-up-btn) {
 
   .nav2.show {
       display: flex;
-      padding-top: 0;
+      padding: 20px 15px;  
   
   }
 
@@ -241,6 +242,7 @@ margin: 50px 200px;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
+   box-shadow: 0 0 5px;
 }
 
 @keyframes bounce {
@@ -279,16 +281,14 @@ margin: 50px 200px;
 }
 
 .home-description{
-  margin: 5px 0 20px 0;
+  margin: 20px 0;
   width: 75%;
   font-size: 1rem;
   color: var(--grey);
   transition: all 1s;
 
 }
-.home-description:hover{
-  transform: translateY(-10px);
-}
+
 
 .content__home-description a{
   margin: 15px 0px 50px;
@@ -298,7 +298,7 @@ margin: 50px 200px;
   color: var(--secondary-color);
 }
 .home-profession{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: var(--secondary-color);
   font-family: 'Consolas', 'monospace';
@@ -582,6 +582,27 @@ footer .copyright{
     gap: 2rem;
   
   }
+  .home-social{
+  display: none;
+  }
+  
+  .home-profession{
+  font-size: 1rem;
+  }
+
+   .image img{
+    border-radius: 20px 0 10px 0 ;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .content{
+    flex-direction: column-reverse;
+  }
+
+  #about{
+  margin: 15px 0;
+}
+  
 }
 
 ::selection{
@@ -601,8 +622,7 @@ footer .copyright{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: var(--purple-gradient);
-  transition: 1s;
+  background-image: var(--orange-gradient);
 }
 
 .spinner {
